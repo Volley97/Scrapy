@@ -3,17 +3,18 @@
 Parsed attributes
 job_title, company_name, crawled_date, posted_date, job_description and job_url.
 
-Prerequisites
+# Prerequisites
 
 virtualven venv
 pip install -r requirements.txt
 source venv/bin/activate
 
-Setup db
-Install Postgres withhttp://www.postgresqltutorial.com/install-postgresql/
+# Setup db
+
+Install Postgres with http://www.postgresqltutorial.com/install-postgresql/
 launch psql and run "\i create_db_schema.sql"
 
-How to start a spider
+# How to start a spider
 
 mkdir out
 scrapy crawl hrforecast_spider -o out/hrforecasr.csv
@@ -23,7 +24,7 @@ How to start both spiders
 chmod +x scrape.sh
 ./scrape.sh
 
-Check db
+# Check db
 
 Launch psql
 \connect jobsbot
